@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Home() {
   return (
@@ -863,9 +864,9 @@ export default function Home() {
                                                     <div className="date-icon">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
                                                             viewBox="0 0 25 25" fill="none">
-                                                            <mask id="mask0_1166_8220" style="mask-type:luminance"
-                                                                maskUnits="userSpaceOnUse" x="0" y="0" width="25"
-                                                                height="25">
+                                                            <mask id="mask0_1166_8220" style={{masktype:'luminance',
+                                                                maskUnits:'userSpaceOnUse', x:'0', y:'0', width:'25',
+                                                                height:'25'}}>
                                                                 <path
                                                                     d="M0.995117 0.140627H24.9951V24.1406H0.995117V0.140627Z"
                                                                     fill="white" />

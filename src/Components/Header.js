@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Header() {
   return (
@@ -55,22 +56,12 @@ export default function Header() {
                         <div className="ak-nav ak-medium">
                             <ul className="ak-nav_list">
                                 <li className="menu-item-has-children">
-                                    <a href="index.html">Home</a>
-                                    <ul>
-                                        <li>
-                                            <a href="index.html">Home 1</a>
-                                        </li>
-                                        <li>
-                                            <a href="home-2.html">Home 2</a>
-                                        </li>
-                                        <li>
-                                            <a href="home-3.html">Home 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="about.html">About</a>
-                                </li>
+                                <Link to="/home">Home</Link>
+                                                                
+                                        <li><Link to="/home">Home</Link></li>                                                                              
+                                   
+                                </li>                               
+                                <li><Link to="/about">About</Link></li>                              
                                 <li>
                                     <a href="menu.html">Menu</a>
                                 </li>

@@ -12,6 +12,7 @@ import NearByFindUs from "./Components/NearByFindUs";
 import Reservations from "./Components/Reservations";
 import Sectionhero from "./Components/Sectionhero";
 import Home from "./Components/Home";
+import { Button, Card, Col, container, Row } from 'bootstrap';
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
      <Header />
         <Routes>
         <Route exact path="/" element={<Home/>} />   
-        <Route exact path="about" element={<About/>} />
+        <Route exact path="About" element={<About/>} />
+        <Route exact path="Chef" element={<Chef/>} />
         </Routes>
    <Footer />
    </Router>

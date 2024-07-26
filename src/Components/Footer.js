@@ -1,10 +1,11 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
     <footer>
             <div className="ak-footer ak-style-1">
-                <div className="ak-bg footer-bg-img" data-src="assets/img/footer_bg.png"></div>
+                <div className="ak-bg footer-bg-img" data-src="./assets/img/footer_bg.png"></div>
 
                 <div className="container ak-hr-container">
 
@@ -17,7 +18,7 @@ export default function Footer() {
                                         stroke-linecap="round" />
                                 </svg>
                             </div>
-                            <img src="assets/img/Elegencia.png" alt="..." />
+                            <img src="./assets/img/Elegencia.png" alt="..." />
                         </div>
                     </div>
                     <div className="ak-height-100 ak-height-lg-60"></div>
@@ -32,12 +33,11 @@ export default function Footer() {
                             </div>
                             <div className="footer-menu">
                                 <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="about.html">About</a></li>
-                                    <li><a href="menu.html">Menu</a></li>
-                                    <li><a href="blog.html">Blog</a></li>
-                                    <li><a href="chef.html">Chef</a></li>
-                                    <li><a href="contact.html">Conatct</a></li>
+                                    <li><Link to="/">Home</Link></li> 
+                                    <li><Link to="/about">About</Link></li> 
+                                    <li><Link to="/chef">Chef</Link></li> 
+                                    <li><Link to="/">Home</Link></li>                                  
+                                   
                                 </ul>
                             </div>
                         </div>

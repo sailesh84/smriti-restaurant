@@ -1,12 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Button, Card, Col, container, Row } from 'bootstrap';
 
 export default function Home() {
   return (
+    <div id="scrollsmoother-container">
     <main>            
             <section>
                 <div className="ak-hero ak-style1">
-                    <div className="ak-hero-bg ak-bg" data-src="assets/img/hero_bg_1.jpg"></div>
+                    <div className="ak-hero-bg ak-bg" data-src="./assets/img/hero_bg_1.jpg"></div>
                     <div className="hero-text-section container-fluid">
                         <div className="ak-slider ak-slider-1">
                             <div className="swiper-wrapper">
@@ -25,11 +27,11 @@ export default function Home() {
                                             </p>
                                         </div>
                                         <div className="ak-height-70 ak-height-lg-30"></div>
-                                        <a href="reservations.html" className="hero-btn style-1">
+                                        <Link to="/reservations" className="hero-btn style-1">                                       
                                             <div className="ak-btn style-5 color-yellow-bg">
                                                 Reservations
                                             </div>
-                                        </a>
+                                            </Link>
                                     </div>
                                 </div>
                                 <div className="swiper-slide">
@@ -48,11 +50,11 @@ export default function Home() {
                                             </p>
                                         </div>
                                         <div className="ak-height-70 ak-height-lg-30"></div>
-                                        <a href="reservations.html" className="hero-btn style-1">
+                                        <Link to="/reservations" className="hero-btn style-1">                                       
                                             <div className="ak-btn style-5 color-yellow-bg">
                                                 Reservations
                                             </div>
-                                        </a>
+                                            </Link>                                       
                                     </div>
                                 </div>
                                 <div className="swiper-slide">
@@ -70,11 +72,11 @@ export default function Home() {
                                             </p>
                                         </div>
                                         <div className="ak-height-70 ak-height-lg-30"></div>
-                                        <a href="reservations.html" className="hero-btn style-1">
+                                        <Link to="/reservations" className="hero-btn style-1">                                       
                                             <div className="ak-btn style-5 color-yellow-bg">
                                                 Reservations
                                             </div>
-                                        </a>
+                                            </Link>                                      
                                     </div>
                                 </div>
 
@@ -138,7 +140,7 @@ export default function Home() {
                 <div className="ak-height-150 ak-height-lg-60"></div>
                 <div className="ak-about ak-style-1">
                     <div className="ak-about-bg-img ak-bg">
-                        <img className="imagesZoom" src="assets/img/about_bg.jpg" alt="..." />
+                        <img className="imagesZoom" src="./assets/img/about_bg.jpg" alt="..." />
                     </div>
                     <div className="ak-about-hr"></div>
                     <div className="container">
@@ -158,9 +160,7 @@ export default function Home() {
                                 </p>
                                 <div className="ak-height-50 ak-height-lg-30"></div>
                                 <div className="text-btn">
-                                    <a href="about.html" className="text-btn1">
-                                        Discover The Kitchen
-                                    </a>
+                                   <Link to="/about" className="text-btn1">Discover The Kitchen</Link>                                  
                                 </div>
                             </div>
                         </div>
@@ -173,7 +173,7 @@ export default function Home() {
 
                 <div className="opening-hour">
                     <div className="opening-hour-img-section">
-                        <img src="assets/img/openingHour.jpg" className="opening-bg-img ak-bg" alt="..." data-speed="auto" />
+                        <img src="./assets/img/openingHour.jpg" className="opening-bg-img ak-bg" alt="..." data-speed="auto" />
                         <div className="overlap-opening-img"></div>
                     </div>
                     <div className="opening-hour-text-section">
@@ -189,13 +189,9 @@ export default function Home() {
                         </div>
                         <div className="ak-height-70 ak-height-lg-30"></div>
                         <div className="text-btn">
-                            <a href="reservations.html" className="text-btn1">
-                                Reservation
-                            </a>
+                            <Link to="/reservations" className="text-btn1">Reservation</Link>                           
                         </div>
-
                         <div className="ak-height-lg-60"></div>
-
                     </div>
                 </div>
 
@@ -214,7 +210,7 @@ export default function Home() {
                             <div className="swiper-slide">
                                 <div className="ak-card ak-style-1">
                                     <a href="portfolio-details.html" className="ak-card-img">
-                                        <img src="assets/img/food_item_1.jpg" alt="..." />
+                                        <img src="./assets/img/food_item_1.jpg" alt="..." />
                                     </a>
                                     <div className="card-info">
                                         <div className="card-text style-1">
@@ -233,7 +229,7 @@ export default function Home() {
                             <div className="swiper-slide">
                                 <div className="ak-card ak-style-1">
                                     <a href="portfolio-details.html" className="ak-card-img">
-                                        <img src="assets/img/food_item_2.jpg" alt="..." />
+                                        <img src="./assets/img/food_item_2.jpg" alt="..." />
 
                                     </a>
                                     <div className="card-info">
@@ -253,7 +249,7 @@ export default function Home() {
                             <div className="swiper-slide">
                                 <div className="ak-card ak-style-1">
                                     <a href="portfolio-details.html" className="ak-card-img">
-                                        <img src="assets/img/food_item_3.jpg" alt="..." />
+                                        <img src="./assets/img/food_item_3.jpg" alt="..." />
                                     </a>
                                     <div className="card-info">
                                         <div className="card-text style-1">
@@ -272,7 +268,7 @@ export default function Home() {
                             <div className="swiper-slide">
                                 <div className="ak-card ak-style-1">
                                     <a href="portfolio-details.html" className="ak-card-img">
-                                        <img src="assets/img/food_item_5.jpg" alt="..." />
+                                        <img src="./assets/img/food_item_5.jpg" alt="..." />
                                     </a>
                                     <div className="card-info">
                                         <div className="card-text style-1">
@@ -291,7 +287,7 @@ export default function Home() {
                             <div className="swiper-slide">
                                 <div className="ak-card ak-style-1">
                                     <a href="portfolio-details.html" className="ak-card-img">
-                                        <img src="assets/img/food_item_4.jpg" alt="..." />
+                                        <img src="./assets/img/food_item_4.jpg" alt="..." />
                                     </a>
                                     <div className="card-info">
                                         <div className="card-text style-1">
@@ -361,7 +357,7 @@ export default function Home() {
                     <div className="ak-height-65 ak-height-lg-30"></div>
                     <div className="ak-menu-list">
                         <div class="ak-menu-list-section-1">
-                            <img src="assets/img/item-show.png" alt="..." />
+                            <img src="./assets/img/item-show.png" alt="..." />
                             <div className="food-menu style-1">
                                 <div className="food-menu-section-1">
                                     <div className="food-menu-title">
@@ -386,7 +382,7 @@ export default function Home() {
                             </div>
                         </div>
                         <div className="ak-menu-list-section-1">
-                            <img src="assets/img/item-show_2.png" alt="..." />
+                            <img src="./assets/img/item-show_2.png" alt="..." />
                             <div className="food-menu style-1">
                                 <div className="food-menu-section-1">
                                     <div className="food-menu-title">
@@ -411,7 +407,7 @@ export default function Home() {
                             </div>
                         </div>
                         <div className="ak-menu-list-section-1">
-                            <img src="assets/img/item-show.png" alt="..." />
+                            <img src="./assets/img/item-show.png" alt="..." />
                             <div className="food-menu style-1">
                                 <div className="food-menu-section-1">
                                     <div className="food-menu-title">
@@ -436,7 +432,7 @@ export default function Home() {
                             </div>
                         </div>
                         <div className="ak-menu-list-section-1">
-                            <img src="assets/img/item-show_2.png" alt="..." />
+                            <img src="./assets/img/item-show_2.png" alt="..." />
                             <div className="food-menu style-1">
                                 <div className="food-menu-section-1">
                                     <div className="food-menu-title">
@@ -461,7 +457,7 @@ export default function Home() {
                             </div>
                         </div>
                         <div className="ak-menu-list-section-1">
-                            <img src="assets/img/item-show.png" alt="..." />
+                            <img src="./assets/img/item-show.png" alt="..." />
                             <div className="food-menu style-1">
                                 <div className="food-menu-section-1">
                                     <div className="food-menu-title">
@@ -486,7 +482,7 @@ export default function Home() {
                             </div>
                         </div>
                         <div className="ak-menu-list-section-1">
-                            <img src="assets/img/item-show_2.png" alt="..." />
+                            <img src="./assets/img/item-show_2.png" alt="..." />
                             <div className="food-menu style-1">
                                 <div className="food-menu-section-1">
                                     <div className="food-menu-title">
@@ -511,7 +507,7 @@ export default function Home() {
                             </div>
                         </div>
                         <div className="ak-menu-list-section-1">
-                            <img src="assets/img/item-show.png" alt="..." />
+                            <img src="./assets/img/item-show.png" alt="..." />
                             <div className="food-menu style-1">
                                 <div className="food-menu-section-1">
                                     <div className="food-menu-title">
@@ -536,7 +532,7 @@ export default function Home() {
                             </div>
                         </div>
                         <div className="ak-menu-list-section-1">
-                            <img src="assets/img/item-show_2.png" alt="..." />
+                            <img src="./assets/img/item-show_2.png" alt="..." />
                             <div className="food-menu style-1">
                                 <div className="food-menu-section-1">
                                     <div className="food-menu-title">
@@ -561,7 +557,7 @@ export default function Home() {
                             </div>
                         </div>
                         <div className="ak-menu-list-section-1">
-                            <img src="assets/img/item-show.png" alt="..." />
+                            <img src="./assets/img/item-show.png" alt="..." />
                             <div className="food-menu style-1">
                                 <div className="food-menu-section-1">
                                     <div className="food-menu-title">
@@ -586,7 +582,7 @@ export default function Home() {
                             </div>
                         </div>
                         <div className="ak-menu-list-section-1">
-                            <img src="assets/img/item-show_2.png" alt="..." />
+                            <img src="./assets/img/item-show_2.png" alt="..." />
                             <div className="food-menu style-1">
                                 <div className="food-menu-section-1">
                                     <div className="food-menu-title">
@@ -645,16 +641,16 @@ export default function Home() {
                             </div>
                             <div className="ak-height-50 ak-height-lg-30"></div>
                             <div className="img-one">
-                                <img src="assets/img/bestItem2.jpg" alt="..." data-speed="1.2" data-lag="0" />
+                                <img src="./assets/img/bestItem2.jpg" alt="..." data-speed="1.2" data-lag="0" />
                                 <div className="img-overlay"></div>
                             </div>
                         </div>
                         <div className="best-item-section-2" data-speed="1.1" data-lag="1">
-                            <img src="assets/img/star_line.svg" alt="..." />
+                            <img src="./assets/img/star_line.svg" alt="..." />
                         </div>
                         <div className="best-item-section-3">
                             <div className="img-two">
-                                <img src="assets/img/bestItem1.jpg" alt="..." data-speed="1.1" data-lag="0" />
+                                <img src="./assets/img/bestItem1.jpg" alt="..." data-speed="1.1" data-lag="0" />
                                 <div className="img-overlay"></div>
                             </div>
                         </div>
@@ -671,11 +667,11 @@ export default function Home() {
                             <div className="container">
                                 <div className="testimonial-section">
                                     <div className="testimonial-icon-1">
-                                        <img src="assets/img/testimonial_icon_l.svg" alt="..." />
+                                        <img src="./assets/img/testimonial_icon_l.svg" alt="..." />
                                     </div>
                                     <div className="testimonial-info-section">
                                         <div className="testimonial-info">
-                                            <img src="assets/img/testimonial_1.jpg" className="testimonial-info-img"
+                                            <img src="./assets/img/testimonial_1.jpg" className="testimonial-info-img"
                                                 alt="..." />
                                             <h6 className="testimonial-info-title">Steven K. Roberts</h6>
                                             <p className="short-title">From USA</p>
@@ -686,7 +682,7 @@ export default function Home() {
                                         </div>
                                     </div>
                                     <div className="testimonial-icon-1">
-                                        <img src="assets/img/testimonial_icon_r.svg" alt="..." />
+                                        <img src="mg/testimonial_icon_r.svg" alt="..." />
                                     </div>
                                 </div>
                             </div>
@@ -695,11 +691,11 @@ export default function Home() {
                             <div className="container">
                                 <div className="testimonial-section">
                                     <div className="testimonial-icon-1">
-                                        <img src="assets/img/testimonial_icon_l.svg" alt="..." />
+                                        <img src="./assets/img/testimonial_icon_l.svg" alt="..." />
                                     </div>
                                     <div className="testimonial-info-section">
                                         <div className="testimonial-info">
-                                            <img src="assets/img/testimonial_2.jpg" className="testimonial-info-img"
+                                            <img src="./assets/img/testimonial_2.jpg" className="testimonial-info-img"
                                                 alt="..." />
                                             <h6 className="testimonial-info-title">Steven K. Roberts</h6>
                                             <p className="short-title">From USA</p>
@@ -710,7 +706,7 @@ export default function Home() {
                                         </div>
                                     </div>
                                     <div className="testimonial-icon-1">
-                                        <img src="assets/img/testimonial_icon_r.svg" alt="..." />
+                                        <img src="./assets/img/testimonial_icon_r.svg" alt="..." />
                                     </div>
                                 </div>
                             </div>
@@ -719,11 +715,11 @@ export default function Home() {
                             <div className="container">
                                 <div className="testimonial-section">
                                     <div className="testimonial-icon-1">
-                                        <img src="assets/img/testimonial_icon_l.svg" alt="..." />
+                                        <img src="./assets/img/testimonial_icon_l.svg" alt="..." />
                                     </div>
                                     <div className="testimonial-info-section">
                                         <div className="testimonial-info">
-                                            <img src="assets/img/testimonial_3.jpg" className="testimonial-info-img"
+                                            <img src="./assets/img/testimonial_3.jpg" className="testimonial-info-img"
                                                 alt="..." />
                                             <h6 className="testimonial-info-title">Steven K. Roberts</h6>
                                             <p className="short-title">From USA</p>
@@ -734,7 +730,7 @@ export default function Home() {
                                         </div>
                                     </div>
                                     <div className="testimonial-icon-1">
-                                        <img src="assets/img/testimonial_icon_r.svg" alt="..." />
+                                        <img src="./assets/img/testimonial_icon_r.svg" alt="..." />
                                     </div>
                                 </div>
                             </div>
@@ -784,7 +780,7 @@ export default function Home() {
           
             <section>
                 <div className="ak-booking-system">
-                    <img class="ak-booking-system-bg-img ak-bg imagesZoom" src="assets/img/bookingSystemBg.png"
+                    <img class="ak-booking-system-bg-img ak-bg imagesZoom" src="./assets/img/bookingSystemBg.png"
                         alt="..." />
                     <div className="ak-height-150 ak-height-lg-60"></div>
                     <div className="container">
@@ -898,5 +894,6 @@ export default function Home() {
             </section>
            
         </main>
+        </div>
   );
 }

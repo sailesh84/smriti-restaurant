@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
 
 export default function About() {
   return (
+    <Fragment>
     <section className="ak-about-bg-color">
     <div className="ak-height-150 ak-height-lg-60"></div>
     <div className="ak-about ak-style-1">
@@ -35,7 +36,6 @@ export default function About() {
             </div>
         </div>
     </div>
-
 </section>,
 <section className="container">
             <div className="ak-height-150 ak-height-lg-60"></div>
@@ -49,7 +49,7 @@ export default function About() {
                                 </div>
                                 <div className="testimonial-info-section">
                                     <div className="testimonial-info">
-                                        <img src={require("../assets/img/testimonial_1.jpg")} class="testimonial-info-img" alt="..." />
+                                        <img class="testimonial-info-img" src={require("../assets/img/testimonial_1.jpg")} alt="..." />
                                         <h6 className="testimonial-info-title">Steven K. Roberts</h6>
                                         <p className="short-title">From USA</p>
                                         <p className="testimonial-info-subtitle">“Their talented team of passionate chefs
@@ -149,6 +149,48 @@ export default function About() {
                     </div>
                 </div>
             </div>
-        </section>
+        </section>,
+        <section className="container">
+            <div className="ak-height-150 ak-height-lg-60"></div>
+            <div className="opening-hour type-2">
+                <div className="opening-hour-img-section style-2">
+                    <img className="imagesZoom opening-bg-img ak-bg" src={require("../assets/img/about_open_hour.jpg")} alt="..." />
+                    <div className="overlap-opening-img"></div>
+                </div>
+                <div className="opening-hour-text-section type-2">
+                    <h2 className="opening-hour-title  anim-title-2">Opening Hours</h2>
+                    <div className="ak-height-30 ak-height-lg-30"></div>
+                    <p className="opening-hour-subtext">Lorem to our restaurant, where culinary artistry meets exceptional
+                        dining experiences. At, we strive to create a gastronomic haven that.</p>
+                    <div className="ak-height-30 ak-height-lg-30"></div>
+                    <div className="opening-hour-date">
+                        <p>SUNDAY - THURSDAY: 11:30AM - 11PM</p>
+                        <div className="opening-hour-hr"></div>
+                        <p> FRIDAY & SATURDAY: 11:30AM - 12AM</p>
+                    </div>
+                    <div className="ak-height-70 ak-height-lg-30"></div>
+                    <div className="text-btn">
+                        <a href="reservations.html" className="text-btn1">
+                            Reservation
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </section>,
+        <div className="ak-height-150 ak-height-lg-60"></div>
+       
+        <div className="video-section">
+            <img src={require("../assets/img/aboutVideoBg.jpg")} alt="..." className="video-section-bg-img ak-bg imagesZoom"
+                data-speed="1.1" />
+            <div className="video-section-btn">
+                <a href="https://www.youtube.com/watch?v=UsD1MhKBmD4" className="ak-video-block ak-style1 ak-video-open">
+                    <span className="ak-player-btn ak-accent-color">
+                        <span></span>
+                    </span>
+                </a>
+            </div>
+        </div>
+        </Fragment>
   );
 }

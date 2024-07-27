@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button, Card, Col, container, Row } from 'bootstrap';
-import logo from '../assets/img/logo.png';
 
 export default function Header() {
   return (
@@ -13,7 +12,7 @@ export default function Header() {
                 <Link to="/reservations" className="logo">Reservation</Link>
                 </div>
                 <div className="center-log">
-                    <Link to="/home"><img src={logo} alt="..." /></Link>                   
+                    <Link to="/home"><img src={require("../assets/img/logo.png")} alt="..." /></Link>                   
                 </div>
                 <button className="ak-menu-toggle" id="akMenuToggle" type="button">
                     <svg viewBox="0 0 20 15" width="40px" height="30px" className="ak-menu-icon">
@@ -25,24 +24,24 @@ export default function Header() {
                 {/* <ul className="top-main-menu">
                     <li className="top-main-menu-li">
                     <Link to="/">Home</Link>
-                       <img className="top-main-menu-img" src="../assets/img/fullWM_1.jpg" alt="..." />
+                       <img className="top-main-menu-img" src={require("../assets/img/fullWM_1.jpg")} alt="..." />
                     </li>
                     <li className="top-main-menu-li">
                     <Link to="/about">About</Link>
-                      <img className="top-main-menu-img" src="../assets/img/fullWM_about.jpg" alt="..." />
+                      <img className="top-main-menu-img" src={require("../assets/img/fullWM_about.jpg")} alt="..." />
                     </li>
                     <li className="top-main-menu-li">
                     <Link to="">Menu</Link>
-                         <img className="top-main-menu-img menu-img" src="../assets/img/fullWM_menu.jpg" alt="..." />
+                         <img className="top-main-menu-img menu-img" src={require("../assets/img/fullWM_menu.jpg")} alt="..." />
                     </li>
                     <li className="top-main-menu-li">
                     <Link to="/chef">Chef</Link>
-                      <img className="top-main-menu-img" src="../assets/img/fullWM_chef.jpg" alt="..." />
+                      <img className="top-main-menu-img" src={require("../assets/img/fullWM_chef.jpg")} alt="..." />
                     </li>
-                    <li className="top-main-menu-li">
+                    {/* <li className="top-main-menu-li">
                     <Link to="">Contact</Link>
                       <img className="top-main-menu-img" src="../assets/img/fullWM_contact.jpg" alt="..." />
-                    </li>
+                    </li> 
                 </ul> */}
             </div>
         </div>
@@ -52,7 +51,7 @@ export default function Header() {
                 <div className="ak-main_header_in">
                     <div className="ak-main_header_left">
                         <Link to="/home" className="ak-site_branding">                       
-                            <img src="./assets/img/logo.png" alt="..." />
+                            <img src={require("../assets/img/logo.png")} alt="..." />
                         </Link>
                     </div>
                     <div className="ak-main_header_right">

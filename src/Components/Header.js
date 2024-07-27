@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button, Card, Col, container, Row } from 'bootstrap';
+import logo from '../assets/img/logo.png';
 
 export default function Header() {
   return (
@@ -12,7 +13,7 @@ export default function Header() {
                 <Link to="/reservations" className="logo">Reservation</Link>
                 </div>
                 <div className="center-log">
-                    <Link to="/home"><img src="../assets/img/logo.png" alt="..." /></Link>                   
+                    <Link to="/home"><img src={logo} alt="..." /></Link>                   
                 </div>
                 <button className="ak-menu-toggle" id="akMenuToggle" type="button">
                     <svg viewBox="0 0 20 15" width="40px" height="30px" className="ak-menu-icon">
@@ -21,7 +22,7 @@ export default function Header() {
                         <path d="M30,12 L2,12" className="bar-3"></path>
                     </svg>
                 </button>
-                <ul className="top-main-menu">
+                {/* <ul className="top-main-menu">
                     <li className="top-main-menu-li">
                     <Link to="/">Home</Link>
                        <img className="top-main-menu-img" src="../assets/img/fullWM_1.jpg" alt="..." />
@@ -42,7 +43,7 @@ export default function Header() {
                     <Link to="">Contact</Link>
                       <img className="top-main-menu-img" src="../assets/img/fullWM_contact.jpg" alt="..." />
                     </li>
-                </ul>
+                </ul> */}
             </div>
         </div>
         <div className="nav-bar-border"></div>
@@ -58,13 +59,10 @@ export default function Header() {
                         <div className="ak-nav ak-medium">
                             <ul className="ak-nav_list">
                                 <li className="menu-item-has-children">
-                                <Link to="/home">Home</Link>                                                               
-                                                                                                                  
+                                <Link to="/home">Home</Link>                                                                                
                                 </li>                               
-                                <li><Link to="/about">About</Link></li>                              
-                                <li>
-                                    <a href="menu.html">Menu</a>
-                                </li>
+                                <li><Link to="/about">About</Link></li>   
+                                <li><Link to="/menu">Menu</Link></li>     
                                 <li className="menu-item-has-children">
                                 <Link to="/chef">Chef</Link>
                                     <ul>

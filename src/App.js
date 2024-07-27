@@ -13,6 +13,8 @@ import Reservations from "./Components/Reservations";
 import Sectionhero from "./Components/Sectionhero";
 import Home from "./Components/Home";
 import { Button, Card, Col, container, Row } from 'bootstrap';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 
 function App() {
   return (

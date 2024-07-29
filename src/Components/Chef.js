@@ -1,11 +1,31 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { Button, Card, Col, container, Row } from 'bootstrap';
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Scrollbar, A11y, EffectCube } from 'swiper';
+import 'swiper/css';
+
 
 export default function Chef() {
   return (
+    <div id="scrollsmoother-container">      
+        <section>
+            <div className="ak-commmon-hero ak-style1 ak-bg" data-src="../assets/img/banner_top_all.jpg">
+                <div className="ak-commmon-heading">
+                    <div className="ak-section-heading ak-style-1 ak-type-1 ak-color-1 page-top-title">
+                        <div className="ak-section-subtitle">
+                            <a href="index.html">Home</a> / Chefs
+                        </div>
+                        <h2 className="ak-section-title page-title-anim">Our Chefs</h2>
+                    </div>
+                </div>
+            </div>
+        </section>,
     <section className="container">
             <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
                 <div className="col">
-                    <div className="chef ak-bg" data-src="assets/img/chef_1.jpg">
+                    <div className="chef ak-bg" data-src={require("../assets/img/chef_1.jpg")}>
                         <div className="chef-style-1">
                             <div className="chef-info">
                                 <div className="chef-info-social">
@@ -110,5 +130,6 @@ export default function Chef() {
             </div>
 
         </section>
+        </div>
   );
 }

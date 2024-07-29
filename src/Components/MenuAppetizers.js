@@ -3,7 +3,7 @@ import React from 'react'
 export default function MenuAppetizers() {
   return (
     <section className="set-bg-img-section">
-    <img src="assets/img/menuBg.png" alt="..." data-speed="1.1" className="imagesZoom bg-img ak-bg" />
+    <img src={require("../assets/img/menuBg.png")} alt="..." data-speed="1.1" className="imagesZoom bg-img ak-bg" />
     <div className="ak-height-150 ak-height-lg-60"></div>
     <div className="container">
         <div className="ak-section-heading ak-style-1 ak-type-1">

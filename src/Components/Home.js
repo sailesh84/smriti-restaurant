@@ -1,10 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button, Card, Col, container, Row } from 'bootstrap';
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Scrollbar, A11y, EffectCube } from 'swiper';
+import 'swiper/css';
 
 export default function Home() {
-  return (
-    <div id="scrollsmoother-container">
+  return (  
     <main>            
             <section>
                 <div className="ak-hero ak-style1">
@@ -174,7 +177,6 @@ export default function Home() {
                 <div className="opening-hour">
                     <div className="opening-hour-img-section">
                         <img className="opening-bg-img ak-bg" src={require("../assets/img/openingHour.jpg")} alt="..." data-speed="auto" />
-                        <div className="overlap-opening-img"></div>
                     </div>
                     <div className="opening-hour-text-section">
                         <h2 className="opening-hour-title anim-title-2">Opening Hours </h2>
@@ -642,16 +644,16 @@ export default function Home() {
                             <div className="ak-height-50 ak-height-lg-30"></div>
                             <div className="img-one">
                                 <img src={require("../assets/img/bestItem2.jpg")} alt="..." data-speed="1.2" data-lag="0" />
-                                <div className="img-overlay"></div>
+                               
                             </div>
                         </div>
-                        <div className="best-item-section-2" data-speed="1.1" data-lag="1">
-                            <img src={require("../assets/img/star_line.svg")} alt="..." />
+                        <div className="best-item-section-2" data-speed="1.1" data-lag="1" >
+                            <img src={require("../assets/img/star_line.svg").default} alt="..." />
                         </div>
                         <div className="best-item-section-3">
                             <div className="img-two">
                                 <img src={require("../assets/img/bestItem1.jpg")} alt="..." data-speed="1.1" data-lag="0" />
-                                <div className="img-overlay"></div>
+                               
                             </div>
                         </div>
                     </div>
@@ -667,7 +669,7 @@ export default function Home() {
                             <div className="container">
                                 <div className="testimonial-section">
                                     <div className="testimonial-icon-1">
-                                        <img src={require("../assets/img/testimonial_icon_l.svg")} alt="..." />
+                                        <img src={require("../assets/img/testimonial_icon_l.svg").default} alt="..." />
                                     </div>
                                     <div className="testimonial-info-section">
                                         <div className="testimonial-info">
@@ -682,7 +684,7 @@ export default function Home() {
                                         </div>
                                     </div>
                                     <div className="testimonial-icon-1">
-                                        <img src={require("../assets/img/testimonial_icon_r.svg")} alt="..." />
+                                        <img src={require("../assets/img/testimonial_icon_r.svg").default} alt="..." />
                                     </div>
                                 </div>
                             </div>
@@ -691,7 +693,7 @@ export default function Home() {
                             <div className="container">
                                 <div className="testimonial-section">
                                     <div className="testimonial-icon-1">
-                                        <img src={require("../assets/img/testimonial_icon_l.svg")} alt="..." />
+                                        <img src={require("../assets/img/testimonial_icon_l.svg").default} alt="..." />
                                     </div>
                                     <div className="testimonial-info-section">
                                         <div className="testimonial-info">
@@ -706,7 +708,7 @@ export default function Home() {
                                         </div>
                                     </div>
                                     <div className="testimonial-icon-1">
-                                        <img src={require("../assets/img/testimonial_icon_r.svg")} alt="..." />
+                                        <img src={require("../assets/img/testimonial_icon_r.svg").default} alt="..." />
                                     </div>
                                 </div>
                             </div>
@@ -715,7 +717,7 @@ export default function Home() {
                             <div className="container">
                                 <div className="testimonial-section">
                                     <div className="testimonial-icon-1">
-                                        <img src={require("../assets/img/testimonial_icon_l.svg")} alt="..." />
+                                        <img src={require("../assets/img/testimonial_icon_l.svg").default} alt="..." />
                                     </div>
                                     <div className="testimonial-info-section">
                                         <div className="testimonial-info">
@@ -730,7 +732,7 @@ export default function Home() {
                                         </div>
                                     </div>
                                     <div className="testimonial-icon-1">
-                                        <img src={require("../assets/img/testimonial_icon_r.svg")} alt="..." />
+                                        <img src={require("../assets/img/testimonial_icon_r.svg").default} alt="..." />
                                     </div>
                                 </div>
                             </div>
@@ -774,14 +776,11 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-            </section>
-           
-            <div className="ak-height-150 ak-height-lg-60"></div>
-          
-            <section>
+            </section>         
+            
+             <section>
                 <div className="ak-booking-system">
-                    <img class="ak-booking-system-bg-img ak-bg imagesZoom" src={require("../assets/img/bookingSystemBg.png")}
-                        alt="..." />
+                    <img src={require('../assets/img/bookingSystemBg.png')} alt="..." className="ak-booking-system-bg-img ak-bg imagesZoom" />
                     <div className="ak-height-150 ak-height-lg-60"></div>
                     <div className="container">
                         <div className="row justify-content-center align-content-center align-items-center">
@@ -825,8 +824,8 @@ export default function Home() {
                                                 </div>
                                             </div>
                                             <div className="ak-form-time-date">
-                                                <div class="ak-time">
-                                                    <input value="03:45" class="time-input" type="time" name="time"
+                                                <div className="ak-time">
+                                                    <input value="03:45" className="time-input" type="time" name="time"
                                                         id="time" />
                                                     <div className="time-icon">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
@@ -894,6 +893,6 @@ export default function Home() {
             </section>
            
         </main>
-        </div>
+       
   );
 }

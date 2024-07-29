@@ -1,9 +1,26 @@
 import React, { Fragment } from 'react';
-
+import { Link } from 'react-router-dom';
+import { Button, Card, Col, container, Row } from 'bootstrap';
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Scrollbar, A11y, EffectCube } from 'swiper';
+import 'swiper/css';
 
 export default function About() {
   return (
-    <Fragment>
+    <div id="scrollsmoother-container">
+    <section>
+    <div className="ak-commmon-hero ak-style1 ak-bg" data-src={require("../assets/img/banner_top_all.png").default}>
+        <div className="ak-commmon-heading">
+            <div className="ak-section-heading ak-style-1 ak-type-1 ak-color-1 page-top-title">
+                <div className="ak-section-subtitle">
+                    <a href="index.html">Home</a> / About Us
+                </div>
+                <h2 className="ak-section-title page-title-anim">About Us</h2>
+            </div>
+        </div>
+    </div>
+</section>
     <section className="ak-about-bg-color">
     <div className="ak-height-150 ak-height-lg-60"></div>
     <div className="ak-about ak-style-1">
@@ -45,30 +62,7 @@ export default function About() {
                         <div className="container">
                             <div className="testimonial-section">
                                 <div className="testimonial-icon-1">
-                                    <img src={require("../assets/img/testimonial_icon_l.svg")} alt="..." />
-                                </div>
-                                <div className="testimonial-info-section">
-                                    <div className="testimonial-info">
-                                        <img class="testimonial-info-img" src={require("../assets/img/testimonial_1.jpg")} alt="..." />
-                                        <h6 className="testimonial-info-title">Steven K. Roberts</h6>
-                                        <p className="short-title">From USA</p>
-                                        <p className="testimonial-info-subtitle">“Their talented team of passionate chefs
-                                            masterfully crafts each dish, combining the finest ingredients with
-                                            innovative techniques to present culinary creations that are as visually
-                                            stunning as they are delicious.”</p>
-                                    </div>
-                                </div>
-                                <div className="testimonial-icon-1">
-                                    <img src={require("../assets/img/testimonial_icon_r.svg")} alt="..." />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="swiper-slide">
-                        <div className="container">
-                            <div className="testimonial-section">
-                                <div className="testimonial-icon-1">
-                                    <img src={require("../assets/img/testimonial_icon_l.svg")} alt="..." />
+                                    <img src={require("../assets/img/testimonial_icon_l.svg").default} alt="..." />
                                 </div>
                                 <div className="testimonial-info-section">
                                     <div className="testimonial-info">
@@ -82,7 +76,7 @@ export default function About() {
                                     </div>
                                 </div>
                                 <div className="testimonial-icon-1">
-                                    <img src={require("../assets/img/testimonial_icon_r.svg")} alt="..." />
+                                    <img src={require("../assets/img/testimonial_icon_r.svg").default} alt="..." />
                                 </div>
                             </div>
                         </div>
@@ -91,7 +85,30 @@ export default function About() {
                         <div className="container">
                             <div className="testimonial-section">
                                 <div className="testimonial-icon-1">
-                                    <img src={require("../assets/img/testimonial_icon_l.svg")} alt="..." />
+                                    <img src={require("../assets/img/testimonial_icon_l.svg").default} alt="..." />
+                                </div>
+                                <div className="testimonial-info-section">
+                                    <div className="testimonial-info">
+                                        <img src={require("../assets/img/testimonial_1.jpg")} class="testimonial-info-img" alt="..." />
+                                        <h6 className="testimonial-info-title">Steven K. Roberts</h6>
+                                        <p className="short-title">From USA</p>
+                                        <p className="testimonial-info-subtitle">“Their talented team of passionate chefs
+                                            masterfully crafts each dish, combining the finest ingredients with
+                                            innovative techniques to present culinary creations that are as visually
+                                            stunning as they are delicious.”</p>
+                                    </div>
+                                </div>
+                                <div className="testimonial-icon-1">
+                                    <img src={require("../assets/img/testimonial_icon_r.svg").default} alt="..." />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="swiper-slide">
+                        <div className="container">
+                            <div className="testimonial-section">
+                                <div className="testimonial-icon-1">
+                                    <img src={require("../assets/img/testimonial_icon_l.svg").default} alt="..." />
                                 </div>
                                 <div className="testimonial-info-section">
                                     <div className="testimonial-info">
@@ -105,7 +122,7 @@ export default function About() {
                                     </div>
                                 </div>
                                 <div className="testimonial-icon-1">
-                                    <img src={require("../assets/img/testimonial_icon_r.svg")} alt="..." />
+                                    <img src={require("../assets/img/testimonial_icon_r.svg").default} alt="..." />
                                 </div>
                             </div>
                         </div>
@@ -154,8 +171,8 @@ export default function About() {
             <div className="ak-height-150 ak-height-lg-60"></div>
             <div className="opening-hour type-2">
                 <div className="opening-hour-img-section style-2">
-                    <img className="imagesZoom opening-bg-img ak-bg" src={require("../assets/img/about_open_hour.jpg")} alt="..." />
-                    <div className="overlap-opening-img"></div>
+                    <img src={require("../assets/img/about_open_hour.jpg")} className="imagesZoom opening-bg-img ak-bg" alt="..." />
+                   
                 </div>
                 <div className="opening-hour-text-section type-2">
                     <h2 className="opening-hour-title  anim-title-2">Opening Hours</h2>
@@ -191,6 +208,6 @@ export default function About() {
                 </a>
             </div>
         </div>
-        </Fragment>
+        </div>
   );
 }

@@ -18,7 +18,7 @@ export default function Footer() {
                                         stroke-linecap="round" />
                                 </svg>
                             </div>
-                            <img src="./assets/img/Elegencia.png" alt="..." />
+                            <img src={require("../assets/img/Elegencia.png")} alt="..." />
                         </div>
                     </div>
                     <div className="ak-height-100 ak-height-lg-60"></div>
